@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* =========Global Classes====== */
+    .d-flex{
+        display:flex;
+    }
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+/* ======X==Global Classes==X=== */
+
+/* =========Navigation Bar======== */
+    .nav{
+        padding:10px 15px;
+        justify-content: space-between;
+        align-items: center;
+        background-color:rgba(46, 43, 43, 0.904);
+    }
+    .nav .nav_brand a{
+        font-size:25px;
+        color:white;
+    }
+    .nav .nav_menu ul{
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .nav .nav_menu ul li{
+        margin:0px 15px;
+    }
+    .nav .nav_menu ul li a{
+       color: white;
+       font-size:18px;
+    }
+    .nav .nav_menu ul li a span{
+        font-size:14px;
+    }
+/* ======X==Navigation Bar==X===== */
+
+/* ===============Signup Form========== */
+    .background-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(225deg, hsla(89, 48%, 70%, 0.8) 0%, hsla(34, 86%, 58%, 0.8) 44%, hsla(15, 75%, 69%, 0.8) 63%, hsla(335, 81%, 65%, 0.8) 90%),url(../assets/bacground.jpg);
+        width:100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .background-container .headding{
+        text-align: center;
+        color: white;
+    }
+    .background-container .headding .msg p{
+        color: red;
+        font-size:20px;
+        font-weight:bold;
+        padding:20px;
+    }
+    .background-container .headding h1{
+        font-size:50px;
+        text-transform: capitalize;
+    }
+    .background-container .headding .msg p{
+        font-size:20px;
+        padding:20px; 
+        box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    }
+    .background-container .headding .msg p a{
+        color:rgb(34, 104, 34);
+        text-transform: uppercase;
+    }
+    .background-container .headding h3{
+       font-size:25px;
+       padding:10px 0px;
+    }
+    .background-container .form_body .input{
+        padding:5px 0px;
+    }
+    .background-container .form_body .check label{
+        font-size:16px;
+        color:white;
+    }
+    .background-container .form_body .input input{
+        width:100%;
+        padding:10px 10px;
+        border:none;
+        border-radius:3px;
+        outline:none;
+    }
+    .background-container .form_body .button_sing{
+        margin:10px 0px;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .background-container .form_body .button_sing button{
+        cursor: pointer;
+        padding:10px 20px;
+        border:none;
+        border-radius:3px;
+        background-color:rgb(63, 214, 63);
+        color:white;
+        outline:none;
+        font-size:16px;
+        text-transform: capitalize;
+    }
+    .background-container .form_body .button_sing a{
+        padding:10px 0px;
+        font-size:16px;
+        text-transform: capitalize;
+    }
+/* ============X==Signup Form==X======= */
+
+/* ============Diary Topic========== */
+    .dairy_topic{
+        width:100%;
+        padding:15px;
+    }
+    .dairy_topic .diary_topic_row{
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .dairy_topic .diary_topic_row .toic_add{
+        align-items:center;
+    }
+    .dairy_topic .diary_topic_row .toic_add input{
+        width:100%;
+        padding:10px 20px;
+        font-size:18px;
+        outline: none;
+        border: none;
+        border-bottom:2px solid #ccc;
+    }
+    .dairy_topic .diary_topic_row .toic_add button{
+        cursor: pointer;
+        margin:0px 5px;
+        padding:10px;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        background-color:rgb(25, 233, 25);
+        box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    }
+    .dairy_topic .diary_display{
+        margin-top:25px;
+    }
+    .dairy_topic .diary_display h2{
+        text-align:center;
+        text-transform:uppercase;
+    }
+    .dairy_topic .diary_display .topic_display{
+        margin-top:25px;
+    }
+    .dairy_topic .diary_display .topic_display .topic_body{
+        width:100%;
+        box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+        padding:10px 20px;
+        margin-top:5px;
+        border-radius: 5px;
+        cursor: pointer;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+    .dairy_topic .diary_display .topic_display .topic_body p{
+        font-size:18px;
+        font-weight:bold;
+        text-transform:capitalize;
+    }
+    .dairy_topic .diary_display .topic_display .topic_body ul{
+        justify-content:space-around;
+        align-items: center;
+    }
+    .dairy_topic .diary_display .topic_display .topic_body ul li{
+        margin:0px 10px;
+    }
+    .dairy_topic .diary_display .topic_display .topic_body ul li .fa-edit{
+        color:rgb(134, 24, 238);
+        font-size:20px;
+        box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+        padding:10px;
+        border-radius:50%;
+    }
+    .dairy_topic .diary_display .topic_display .topic_body ul li .fa-trash-alt{
+        color:red;
+        font-size:20px;
+        box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+        padding:10px;
+        border-radius:50%;
+    }
+/* =========X==Diary Topic==X======= */
+
+/* ============Containt============ */
+    .containt_diary{
+        width:100%;
+        padding:0px 15px;
+    }
+    .containt_diary .top_bar {
+        margin-top:25px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .containt_diary .top_bar a .fa-arrow-left{
+        font-size:20px;
+        margin-right: 5px;
+    }
+    .containt_diary .top_bar h1{
+        font-size:25px;
+        text-transform:uppercase;
+        text-align: center;
+    }
+    .containt_diary .top_bar button{
+        cursor: pointer;
+        padding:10px;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        background-color:rgb(25, 233, 25);
+        box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    }
+    .containt_diary .container_dayri{
+        margin-top:25px;
+    }
+    .containt_diary .upadate p{
+        margin-top:10px;
+        text-transform: uppercase;
+        font-weight:bold;
+        text-align:center;
+    }
+    .containt_diary .container_dayri textarea{
+        width:100%;
+        height:100vh;
+        outline: none;
+        border: none;
+        padding:30px;
+        font-size:18px;
+        box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    }
+/* =========X==Containt==X========= */
+
+/* =========ResponsiveNess===== */
+    @media(max-width:500px){
+        .background-container{
+            padding:0px 10px;
+        }
+        .nav{
+            flex-direction:column;
+        }
+        .nav .nav_menu ul{
+            flex-direction:column;
+        }
+        .nav .nav_menu ul li{
+            margin:5px 0px;
+            text-align:center;
+        }
+        .containt_diary .top_bar h1{
+            font-size:20px;
+            margin-right: 5px;
+        }
+        .containt_diary .container_dayri textarea{
+            font-size:16px;
+        }
+        .containt_diary .upadate p{
+            font-size:14px;
+        }
+    }
+/* =====X===ResponsiveNess==X== */
